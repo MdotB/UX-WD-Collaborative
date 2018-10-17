@@ -7,15 +7,11 @@ const Header = () => {
         <div>
             <header className="header-wrapper">
                 <h2>Atruity</h2>
-                <nav>
-                    <ul>
-                        <Link to='/'>Home</Link>
-                        <Link to='/plan/mvv'>Plan</Link>
-                        <Link to='/projects'>Projects</Link>
-                        <Link to='/reports'>Reports</Link>
-                        <Link to='/learn'>Learn</Link>
-                    </ul>
-                </nav>
+                <Link to='/'><img src="/home_icon_white.png" alt="Home"/></Link>
+                <Link to='/plan/mvv'><img src="/plan_icon_white.png" alt="Plan"/></Link>
+                <Link to='/projects'><img src="/projects_icon_white.png" alt="Projects"/></Link>
+                <Link to='/reports'><img src="/reports_icon_white.png" alt="Reports"/></Link>
+                <Link to='/learn'><img src="/learn_icon_white.png" alt="Learn"/></Link>
             </header>
         </div>
     )
