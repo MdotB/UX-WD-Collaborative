@@ -1,0 +1,8 @@
+.header-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
