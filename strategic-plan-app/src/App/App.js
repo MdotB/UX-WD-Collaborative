@@ -5,11 +5,16 @@ import Plan from '../Plan/Plan';
 import { Route } from 'react-router-dom';
 
 class App extends Component {
+  state = {
+    data: this.props.data
+  }
   render() {
     return (
       <div className="App">
         <Header />
-        <Route path='/plan' render={() => <Plan />}/>
+        <main>
+          <Route path='/plan/mvv' render={() => <Plan data={this.props.data}/>}/>
+        </main>
       </div>
     );
   }
