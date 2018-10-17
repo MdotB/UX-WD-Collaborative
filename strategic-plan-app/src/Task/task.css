@@ -1,0 +1,7 @@
+.addTask {
+    border:solid black 1px;
+    display: inline-block;
+}
+.form{
+    display: flex;
+}
