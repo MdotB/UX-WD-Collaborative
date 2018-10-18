@@ -1,0 +1,12 @@
+.financials-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.financials-inputs {
+    display: block;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 50px;
+}

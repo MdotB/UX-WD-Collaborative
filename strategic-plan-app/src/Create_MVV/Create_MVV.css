@@ -1,0 +1,35 @@
+
+.mvv-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    align-self: center;
+}
+p {
+    font-size: 10px;
+    line-height: 1.5em;
+    max-width: 500px;
+}
+.mvv-inputs {
+    display: block;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 50px;
+}
+.button-container {
+    align-self: center;
+}
+button {
+    background-color: rgb(50,77,92);
+    border: solid 2px rgb(50,77,92);
+    color: white;
+    padding: 5px 13px;
+    border-radius: 8%;
+}
+form {
+    border-top: solid .5px rgb(50,77,92);
+    padding-top: 10px;
+}

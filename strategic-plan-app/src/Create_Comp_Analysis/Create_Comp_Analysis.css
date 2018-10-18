@@ -1,0 +1,47 @@
+h2 {
+    text-align: center;
+}
+.comp-analysis-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    margin-bottom: 20px;
+}
+th {
+    color: white;
+    background-color: rgb(50,77,92);
+    width: 75px;
+    font-size: .72em;
+    margin: 0;
+}
+.empty {
+    background-color: white;
+    width: 75px;
+}
+.row-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    margin: 0;
+}
+input {
+    display: inline-table;
+    width: 75px;
+    height: 75px;
+    margin: 0;
+}
+.button-container {
+    align-self: center;
+}
+button {
+    background-color: rgb(50,77,92);
+    border: solid 2px rgb(50,77,92);
+    color: white;
+    padding: 5px 13px;
+    border-radius: 8%;
+}
