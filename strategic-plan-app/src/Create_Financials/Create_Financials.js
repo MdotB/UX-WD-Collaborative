@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Create_Financials.css';
 import { Link } from 'react-router-dom';
 
-class Create_Financials extends Component {
+class CreateFinancials extends Component {
   render() {
     return (
       <div className="financials-wrapper">
@@ -10,11 +10,11 @@ class Create_Financials extends Component {
         <form>
             <label>What are your company's financial goals?</label>
             <p>Summary of Financial Projections</p>
-            <input className="financials-inputs" type="text"/>
+            <input id="financialSummary" onChange={this.props.handleChange} className="financials-inputs" type="text"/>
             <p>Overview of Year/Quarter before</p>
-            <input className="financials-inputs" type="text"/>
+            <input id="YoY"className="financials-inputs" onChange={this.props.handleChange} type="text"/>
             <p>Profit or Loss estimates (by time quarter, year, etc.)</p>
-            <input className="financials-inputs" type="text"/>
+            <input id="pl"className="financials-inputs" onChange={this.props.handleChange} type="text"/>
         </form>
         <div className="button-container">
         <Link to="/reports"><button type="submit">To Report!</button></Link>
@@ -24,4 +24,4 @@ class Create_Financials extends Component {
   }
 }
 
-export default Create_Financials;
+export default CreateFinancials;

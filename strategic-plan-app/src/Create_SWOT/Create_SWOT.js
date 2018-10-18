@@ -8,7 +8,7 @@ class Create_SWOT extends Component {
       <div>
         <h2>S.W.O.T. Analysis</h2>
         <form>
-
+            
         </form>
         <Link to="plan/create-financials"><button>Next</button></Link>
       </div>
