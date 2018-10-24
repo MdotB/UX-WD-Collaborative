@@ -1,3 +1,64 @@
-input {
-    display: block;
+
+.h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 15px;
+}
+.MVV-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.mvv-header {
+    padding: 15px;
+    margin: 0;
+    background-color: rgb(74, 217, 217);
+    border-top: solid 5px rgb(242, 60, 80);
+}
+
+.missionStatment-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50,77,92);
+    border-radius: 1% 0 0 1%;
+    flex: 200px;
+}
+.missionStatment-wrapper p {
+    padding: 0 15px 15px 15px;
+}
+.vision-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(50,77,92);
+    flex: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.vision-wrapper p {
+    padding: 0 15px 15px 15px;
+}
+
+.values-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(50,77,92);
+    flex: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 1% 1% 0;
+}
+.values-wrapper p {
+    padding: 0 15px 15px 15px;
+}
+
+.competitive-analysis-header {
+    padding: 15px;
+    margin: 0;
+    background-color: rgb(74, 217, 217);
 }

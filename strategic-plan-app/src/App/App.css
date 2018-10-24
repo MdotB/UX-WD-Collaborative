@@ -5,8 +5,12 @@
 html, body {
   margin: 0;
   height: 100vh;
+  background-color: rgb(240,240,240);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main {
-  margin: 70px 20px 20px;
+  margin: 58px 0px 20px;
+  color: rgb(50,77,92);
+  
 }

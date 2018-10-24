@@ -4,23 +4,33 @@ import './Report.css';
 class Report extends Component {
   render() {
     return (
-      <div>
-        <h1>Strategic Plan</h1>
+      <div className="report-container">
 
-        <h2 className="report">Mission, Vision, and Values</h2>
-        <h4>Mission Statement</h4>
-        <p>{this.props.data.mvv.missionStatement}</p>
-        <h4>Vision</h4>
-        <p>{this.props.data.mvv.vision}</p>
-        <h4>Values</h4>
-        <p>{this.props.data.mvv.values}</p>
+        <h1 className="report h1">Strategic Plan</h1>
 
-        <h2 className="report">Competitive Analysis</h2>
+        
+          <h2 className="mvv-header">Mission | Vision | Values</h2>
+          <div className="MVV-wrapper">
+            <div className="missionStatment-wrapper">
+              <h4>Mission</h4>
+              <p>{this.props.data.missionStatement}</p>
+            </div>
+            <div className="vision-wrapper">
+              <h4>Vision</h4>
+              <p>{this.props.data.vision}</p>
+            </div>
+            <div className="vision-wrapper">
+              <h4>Values</h4>
+              <p>{this.props.data.values}</p>
+            </div>
+          </div>
+
+        <h2 className="competitive-analysis-header">Competitive Analysis</h2>
         <h4>Company 1</h4>
-        <li>Strengths: {this.props.data.compAnalysis[0].strengths}</li>
-        <li>Cost: {this.props.data.compAnalysis[1].cost}</li>
-        <li>Market Share: {this.props.data.compAnalysis[2].marketShare}</li>
-        <li>Infrastructure: {this.props.data.compAnalysis[3].infrastructure}</li>
+        <li>Strengths: {this.props.data.strengths}</li>
+        <li>Cost: {this.props.data.cost}</li>
+        <li>Market Share: {this.props.data.marketShare}</li>
+        <li>Infrastructure: {this.props.data.infrastructure}</li>
 
         <h2 className="report">Financial Projections</h2>
         <h4>Financial Summary</h4>

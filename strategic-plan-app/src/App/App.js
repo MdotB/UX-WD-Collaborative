@@ -13,11 +13,25 @@ class App extends Component {
   state = this.props.data
 
   handleMVVChange = (e) => {
+    this.setState({ 
+        [e.target.id]: e.target.value
+    })
+  }
+  handleCompAnalysisChange = (e) => {
     this.setState({
-      mvv: { 
+        [e.target.id]: e.target.value
+    })
+  }
+  handleFinancialChange = (e) => {
+    this.setState({
+      financials: { 
         [e.target.id]: e.target.value
       }
     })
+  }
+  handleSubmit = (e) => {
+    e.preventDefault()
+    console.log("Successful")
   }
 
   render() {
@@ -26,10 +40,10 @@ class App extends Component {
       <div className="App">
         <Header />
         <main>
-          <Route exact path="/plan/create-mvv" render={() => <CreateMVV data={this.state.mvv} handleMVVChange={this.handleMVVChange}/>}/>
-          <Route path='/plan/create-comp-analysis' render={() => <CreateCompAnalysis data={this.state.compAnalysis} handleChange={this.handleChange}/>}/>
+          <Route exact path="/plan/create-mvv" render={() => <CreateMVV data={this.state} handleMVVChange={this.handleMVVChange}/>}/>
+          <Route path='/plan/create-comp-analysis' render={() => <CreateCompAnalysis data={this.state.compAnalysis} handleCompAnalysisChange={this.handleCompAnalysisChange}/>}/>
           <Route path='/plan/create_swot_analysis' render={() => <CreateSWOT data={this.state}/>}/>
-          <Route path='/plan/create-financials' render={() => <CreateFinancials data={this.state.financials} handleChange={this.handleChange}/>}/>
+          <Route path='/plan/create-financials' render={() => <CreateFinancials data={this.state.financials} handleFinancialChange={this.handleFinancialChange}/>}/>
           <Route path='/reports' render={() => <Report data={this.state}/>}/>
           {/* <Route path='/plan' render={() => <Plan data={this.state}/>}/> */}
           <Route path='/projects/project' render={() => <Project data={this.state}/>}/>

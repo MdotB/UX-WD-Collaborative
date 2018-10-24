@@ -20,7 +20,8 @@ p {
     height: 50px;
 }
 .button-container {
-    align-self: center;
+    display: flex;
+    justify-content: flex-end;
 }
 button {
     background-color: rgb(50,77,92);

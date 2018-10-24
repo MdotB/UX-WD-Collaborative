@@ -1,15 +1,13 @@
-{
-    "mvv": {
-        "missionStatement": "Lorem ipsum dolor, sit amet.",
-        "vision": "This is our vision.",
-        "values": "These are our values."
-    },
-    "compAnalysis": [
-        {"strengths": "Be a good person."},
-        {"cost": "It costs too much."},
-        {"marketShare": "100%"},
-        {"infrastructure": "Lorem ipsum infrastructure."}
-    ],
+{   
+    "missionStatement": "",
+    "vision": "",
+    "values": "",
+
+    "strengths": "",
+    "cost": "",
+    "marketShare": "",
+    "infrastructure": "",
+    
     "swot": {
         "s": ["first", "second", "third"],
         "w": ["first", "second", "third"],
@@ -17,8 +15,8 @@
         "t": ["first", "second", "third"]
     },
     "financials": {
-        "financialSummary": "Our financials",
-        "YoY": "This year vs. last year",
-        "pl": "revenue minus expenses = profit"
+        "financialSummary": "",
+        "YoY": "",
+        "pl": ""
     }
 }
